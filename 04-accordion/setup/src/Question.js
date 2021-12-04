@@ -12,6 +12,7 @@ const Question = (props) => {
           {show ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
+      {show && <p>{question.info}</p>}
     </article>
   )
 }
