@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 
 const Question = (props) => {
-  const { question, toggleButton } = props
+  const { question } = props
+
+  const [show, setShow] = useState(false)
 
   return (
     <article className='question'>
