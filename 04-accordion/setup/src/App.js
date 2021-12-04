@@ -11,9 +11,9 @@ function App() {
 
   return (
     <main>
-      <div class='container'>
+      <div className='container'>
         <h3>questions and answers about login</h3>
-        <section class='info'>
+        <section className='info'>
           {data.map((question) => (
             <SingleQuestion
               question={question}
