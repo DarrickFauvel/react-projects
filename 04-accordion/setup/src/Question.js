@@ -8,8 +8,7 @@ const Question = (props) => {
     <article class='question'>
       <header>
         <h4>{question.title}</h4>
-        <button class='btn'>
-          <AiOutlinePlus />
+          {show ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
     </article>
