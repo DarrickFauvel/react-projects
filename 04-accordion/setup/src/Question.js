@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
-import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
-const Question = () => {
-  return <h2>question component</h2>;
-};
+import React, { useState } from 'react'
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 
-export default Question;
+const Question = (props) => {
+  const { question, toggleButton } = props
+
+  return (
+    <article class='question'>
+      <header>
+        <h4>{question.title}</h4>
+        <button class='btn'>
+          <AiOutlinePlus />
+        </button>
+      </header>
+    </article>
+  )
+}
+
+export default Question
